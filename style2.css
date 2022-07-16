@@ -1,0 +1,226 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(dbc/blur\ bg2.jpg);
+    background-size:cover;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+h1{
+    color:white;
+    padding: 30px;
+    text-align: center;
+    font-size:32px;
+    letter-spacing:0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(2, 0, 36);
+    background-image:url(dbc/WEBB8.jpg);
+    background-size:cover ;
+    background-position:top;
+    animation: mymove 10s infinite;
+   
+}
+@keyframes mymove{
+    100%{
+        background-position: bottom;
+    }
+}
+.menu-bar img{
+    position: absolute;
+    margin-top:3.5px;
+    margin-left:-110px;
+    width: 145px;
+    height: 103px;
+}
+.menu-bar
+{
+     background-color: rgba(165, 42, 42, 0.644);
+    text-align: center;
+    width: 100%;
+    box-shadow: 1px 2px 2px 2px rgba(245, 222, 179, 0.438);
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style:none;
+    Color: #fff;
+}
+.menu-bar ul li
+{
+ width: 120px;
+margin:15px;
+padding:15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active , .menu-bar ul li:hover
+{
+    background:rgba(0, 0, 0, 0.438) ;
+    border-radius:10px;
+    box-shadow: 1px 2px 2px 2px rgba(245, 222, 179, 0.438);
+}
+
+.sub-menu-1 {
+    display:none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display:block;
+    position:absolute;
+    background:#01000a96 ; 
+    margin-top:15.5px;
+    margin-left:-13px ;
+    border-radius: 15px;
+    box-shadow: 1px 2px 2px 2px rgba(245, 222, 179, 0.438);
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block ;
+    margin:3px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-radius:0 ;
+    background:transparent ;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color:yellow;
+}
+.maindiv{
+    width: 70%;
+    height:400px ;
+    position: absolute;
+    left:50%;
+    top:69%;
+    transform: translate(-50%,-30% );
+background-image: url(dbc/dbc12.jpg);
+background-size: 100% 100%;
+box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.63);
+animation: slider 30s infinite linear;
+border-radius: 15px;
+}
+@keyframes slider {
+    0%{background-image: url(images/pic2.JPG);}
+
+    20%{background-image: url(images/WEBB7.jpeg);}
+
+    40%{background-image: url(images/WEBB8.jpg);}
+    
+    60%{background-image: url(dbc/1647516203910.jpg);}
+
+    80%{background-image: url(images/WEBB1.jpeg);}
+}
+.txt{
+    padding:40%;
+    margin-top:-79;
+    margin-left:-25%;
+    font-size:40px;
+    font-style:normal;
+    color: white;
+}
+h2{
+    padding:40%;
+   margin-top:-79%;
+    margin-left:-25%;
+    font-size:25px;
+    font-style:normal;
+    color:yellow;
+}
+.justifier{
+    text-align: justify;
+}
+p{
+    padding:35%;
+   margin-top:-71%;
+    margin-left:-20%;
+    font-size:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:lightgoldenrodyellow;
+    text-align:left;
+    
+    
+}
+ h3{
+    padding:40%;
+   margin-top:-67%;
+    margin-left:-25%;
+    font-size:24px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:lightblue;
+    text-align: left;
+ }
+
+ h4{
+    padding:40%;
+ margin-top:-67%;
+  margin-left:-25%;
+  font-size:25px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:yellow;
+  text-align: left;
+}
+.wrap {
+    padding: 30px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.548);
+  }
+  
+  .wrap a {
+    color: #fff;
+  }
+  
+  .hover-fx {
+    font-size: 36px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    line-height: 84px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+  }
+  
+  .hover-fx:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+  }
+  
+  .hover-fx:hover {
+    background-color: #fff;
+    color:green;
+  }
+  
+  .hover-fx:hover:after {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  h5{
+    color:aliceblue;
+  }

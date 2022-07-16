@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url(dbc/dbc12.jpg);
+    background:cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrap a {
+    color: #fff;
+    font-size:large;
+  
+  }
+  
+  .hover-fx {
+    font-size: 36px;
+    display: inline-block;
+    cursor: pointer;
+  
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    line-height: 84px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+  }
+  
+  .hover-fx:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+  }
+  
+  .hover-fx:hover {
+    background-color: #fff;
+    color:green;
+  }
+  
+  .hover-fx:hover:after {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  
+  h5{
+    color: rgba(245, 245, 245, 0.877);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  
+  .card{
+    background:rgba(10, 10, 10, 0.637);
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px 3px rgba(255, 255, 255, 0.219);
+    border-radius: 16px;
+  }
+  
+  .card-icon{
+    font-size: 28px;
+    background:rgba(128, 128, 128, 0.37);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+  
+  .card:hover .card-icon{
+    background: none;
+    color:greenyellow;
+    transform: scale(1.6);
+  }
+  
+  .card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  
+  .card:hover p{
+    max-height: 40px;
+    opacity: 1;
+  }
+  
+  
+  @media screen and (max-width:800px) {
+    .contact-info{
+      flex-direction: column;
+    }
+    .card{
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+    }
+  }
+  h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    top: -300px;
+    margin-left: -20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
