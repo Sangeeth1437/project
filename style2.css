@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background: url(dbc/blur\ bg2.jpg);
+    background: url(blur\ bg2.jpg);
     background-size:cover;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -17,7 +17,7 @@ h1{
     letter-spacing:0.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: rgb(2, 0, 36);
-    background-image:url(dbc/WEBB8.jpg);
+    background-image:url(WEBB8.jpg);
     background-size:cover ;
     background-position:top;
     animation: mymove 10s infinite;
@@ -105,22 +105,22 @@ color:yellow;
     left:50%;
     top:69%;
     transform: translate(-50%,-30% );
-background-image: url(dbc/dbc12.jpg);
+background-image: url(dbc12.jpg);
 background-size: 100% 100%;
 box-shadow: 1px 2px 5px 5px rgba(0, 0, 0, 0.63);
 animation: slider 30s infinite linear;
 border-radius: 15px;
 }
 @keyframes slider {
-    0%{background-image: url(images/pic2.JPG);}
+    0%{background-image: url(pic2.JPG);}
 
-    20%{background-image: url(images/WEBB7.jpeg);}
+    20%{background-image: url(WEBB7.jpeg);}
 
-    40%{background-image: url(images/WEBB8.jpg);}
+    40%{background-image: url(WEBB8.jpg);}
     
-    60%{background-image: url(dbc/1647516203910.jpg);}
+    60%{background-image: url(1647516203910.jpg);}
 
-    80%{background-image: url(images/WEBB1.jpeg);}
+    80%{background-image: url(WEBB1.jpeg);}
 }
 .txt{
     padding:40%;
