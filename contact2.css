@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(dbc/WEBB8.jpg);
+  background-image: url(WEBB8.jpg);
   background:cover;
   min-height: 100vh;
   display: flex;
